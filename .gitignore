@@ -1,0 +1,68 @@
+# =================================================================
+# .gitignore for a Java / Maven Project
+# =================================================================
+
+# Compiled class files and all build output
+# This is the most important rule for any Maven project.
+# The 'target' directory contains all compiled code, JARs, etc.
+/target/
+
+# Log files
+*.log
+
+# Java HotSpot VM crash logs
+hs_err_pid*
+
+# =================================================================
+# IDE specific files
+# Ignoring these allows developers to use different IDEs without
+# committing their personal project settings.
+# =================================================================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# =================================================================
+# OS generated files
+# =================================================================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+
+# =================================================================
+# Project-specific notes
+# =================================================================
+
+# NOTE on the database file:
+# In a production environment, you would typically ignore the database file itself
+# and instead commit SQL scripts for schema creation and data seeding.
+# For this university project prototype, the quiz.db file is intentionally
+# NOT ignored so that the project can be run immediately after cloning.
+# If you wanted to ignore it, you would add the line:
+# quiz.db
